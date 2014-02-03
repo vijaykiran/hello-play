@@ -1,0 +1,7 @@
+#!/bin/sh
+# postinst script for vcms2-adapter
+#
+# see: dh_installdeb(1)
+
+
+echo "postinst !!"

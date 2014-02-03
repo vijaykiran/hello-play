@@ -1,17 +1,16 @@
-import org.junit.*;
+import org.junit.Test;
+import play.libs.F.Callback;
+import play.test.TestBrowser;
 
-import play.test.*;
-import play.libs.F.*;
-
+import static org.fest.assertions.Assertions.assertThat;
 import static play.test.Helpers.*;
-import static org.fest.assertions.Assertions.*;
 
 
 public class IntegrationTest {
 
     /**
      * This integration test uses Selenium to test the app with a browser
-     */   
+     */
     @Test
     public void test() {
         running(testServer(3333, fakeApplication(inMemoryDatabase())), HTMLUNIT, new Callback<TestBrowser>() {
@@ -21,5 +20,5 @@ public class IntegrationTest {
             }
         });
     }
-  
+
 }
